@@ -19,17 +19,17 @@ public class DriveTester {
 	final static Logger log = Logger.getLogger(DriveTester.class);
 	
 	public static void main(String[] args) throws Exception{
-		Drive mydrive = DriveCommands.createMyDriveService();
+		WADrive myDrive = new WADrive();
 		java.io.File f = new java.io.File("testout.txt");
-		DriveCommands.uploadFileToFolder(mydrive, f,"MY First Upload", "text/html");
+		myDrive.uploadFileToFolder( f,"MY First Upload", "text/html");
 		
 		
-		File googleDoc = DriveCommands.getFileFromName(mydrive, "Oracle_Logminer_3.1.1_TestPlan");
-		InputStream googleContent = DriveCommands.downloadFile(mydrive,googleDoc);
-		boolean exists = DriveCommands.fileExists(mydrive, "DOESNT EXIST");
-		HTMLCreate html = DriveCommands.parseTableOfContentsToHTML(googleContent);
+//		File googleDoc = WADrive.getFileFromName(mydrive, "Oracle_Logminer_3.1.1_TestPlan");
+//		InputStream googleContent = WADrive.downloadFile(mydrive,googleDoc);
+//		boolean exists = WADrive.fileExists(mydrive, "DOESNT EXIST");
+//		HTMLCreate html = WADrive.parseTableOfContentsToHTML(googleContent);
 
-		FileUtils.writeStringToFile(f, html.toString());
+//		FileUtils.writeStringToFile(f, html.toString());
 		//DriveCommands.updateFile(mydrive, "1YF0SPEIQz8wTOOA38HtbzjCT3YJYXtjFJXJkexN73pw", f);
 		
 		

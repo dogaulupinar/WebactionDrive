@@ -37,3 +37,37 @@
 2015-03-18 18:25:51 INFO  DriveCommands:121 - upload file
 2015-03-18 18:25:53 INFO  DriveCommands:247 - Requesting file Oracle_Logminer_3.1.1_TestPlan
 2015-03-18 18:25:54 INFO  DriveCommands:247 - Requesting file DOESNT EXIST
+2015-03-19 18:53:56 ERROR WADrive:95 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:95)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:55:56 ERROR WADrive:95 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:95)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:56:10 ERROR WADrive:100 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:100)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:56:49 ERROR WADrive:95 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:95)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:56:49 ERROR WADrive:100 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:100)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:56:49 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-19 18:56:49 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-19 18:56:49 INFO  WADrive:144 - upload file
+2015-03-19 18:58:44 ERROR WADrive:95 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:95)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:58:44 ERROR WADrive:100 - error while reading in tokens.txt
+Drive.WebactionDrive.WADrive$GoogleDriveException
+	at Drive.WebactionDrive.WADrive.<init>(WADrive.java:100)
+	at Drive.WebactionDrive.DriveTester.main(DriveTester.java:22)
+2015-03-19 18:58:44 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-19 18:58:44 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-19 18:58:44 INFO  WADrive:144 - upload file
