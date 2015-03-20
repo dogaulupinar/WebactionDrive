@@ -1,0 +1,39 @@
+2015-03-18 16:48:58 DEBUG DriveTester:22 - help
+2015-03-18 16:55:30 DEBUG DriveTester:22 - help
+2015-03-18 16:55:30 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 16:55:30 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 17:38:44 DEBUG DriveTester:22 - help
+2015-03-18 17:38:45 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 17:38:45 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 17:38:45 INFO  DriveCommands:234 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-18 17:40:18 DEBUG DriveTester:22 - help
+2015-03-18 17:40:18 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 17:40:18 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 17:40:18 INFO  DriveCommands:234 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-18 17:44:16 DEBUG DriveTester:22 - help
+2015-03-18 17:44:16 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 17:44:16 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 17:44:16 INFO  DriveCommands:234 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-18 17:44:20 INFO  DriveCommands:234 - Requesting file DOESNT EXIST
+2015-03-18 18:17:09 DEBUG DriveTester:22 - help
+2015-03-18 18:17:09 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 18:17:09 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 18:17:09 INFO  DriveCommands:247 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-18 18:17:14 INFO  DriveCommands:247 - Requesting file DOESNT EXIST
+2015-03-18 18:17:15 INFO  DriveCommands:121 - upload file
+2015-03-18 18:21:18 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 18:21:18 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 18:21:18 INFO  DriveCommands:121 - upload file
+2015-03-18 18:21:25 INFO  DriveCommands:247 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-18 18:21:27 INFO  DriveCommands:247 - Requesting file DOESNT EXIST
+2015-03-18 18:23:54 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 18:23:54 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 18:23:54 INFO  DriveCommands:121 - upload file
+2015-03-18 18:25:17 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 18:25:17 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 18:25:17 INFO  DriveCommands:121 - upload file
+2015-03-18 18:25:51 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-18 18:25:51 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-18 18:25:51 INFO  DriveCommands:121 - upload file
+2015-03-18 18:25:53 INFO  DriveCommands:247 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-18 18:25:54 INFO  DriveCommands:247 - Requesting file DOESNT EXIST

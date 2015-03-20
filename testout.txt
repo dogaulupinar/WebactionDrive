@@ -1,0 +1,144 @@
+<style>
+.testsuite{
+font-size: x-large;
+}
+.testcase{
+font-size:medium;
+}
+</style>
+<div class=" testsuite">
+ <span id="num">3.1</span>
+ <span id="name">Logminer Source Tests </span>
+ <div class=" testcase">
+  <span id="num">3.1.1</span>
+  <span id="name">CommittedTransactions: True </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.2</span>
+  <span id="name">CommittedTransactions: False Using Redo Logs </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.3</span>
+  <span id="name">CommittedTransactions: True Using Redo Logs </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.4</span>
+  <span id="name">DDLTracking: True </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.5</span>
+  <span id="name">DDLTracking: True Using Redo Logs </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.6</span>
+  <span id="name">DDLTracking: False </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.7</span>
+  <span id="name">FilterTransactionBoundaries: False </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.8</span>
+  <span id="name">FilterTransactionBoundaries: False Using Redo Logs </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.1.9</span>
+  <span id="name">SupportOpentransactions: True with CommittedTransactions: True </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+</div>
+<div class=" testsuite">
+ <span id="num">3.2</span>
+ <span id="name">Negative Testing </span>
+ <div class=" testcase">
+  <span id="num">3.2.1</span>
+  <span id="name">OnlineCataolog: False and RedoLogsfiles: are not specified </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.2.2</span>
+  <span id="name">FetchSize &lt; 1 </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.2.3</span>
+  <span id="name">FetchSize &gt;10000 </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.2.4</span>
+  <span id="name">QueueSize &lt; 1 </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.2.5</span>
+  <span id="name">QueueSize &gt; 10000 </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+</div>
+<div class=" testsuite">
+ <span id="num">3.3</span>
+ <span id="name">Data Type Support </span>
+ <div class=" testcase">
+  <span id="num">3.3.1</span>
+  <span id="name">Supports the following data types. </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.3.2</span>
+  <span id="name">Unsupported data Types </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+</div>
+<div class=" testsuite">
+ <span id="num">3.4</span>
+ <span id="name">Logminer App Test </span>
+ <div class=" testcase">
+  <span id="num">3.4.1</span>
+  <span id="name">All Properties with default values and One Table: </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.2</span>
+  <span id="name">One Table with RedoLogs </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.3</span>
+  <span id="name">Using the Map Functionality </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.4</span>
+  <span id="name">Reading from two tables </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.5</span>
+  <span id="name">Using Table WildCard and exclude table </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.6</span>
+  <span id="name">Using Schema WildCard </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.7</span>
+  <span id="name">Using Multiple WildCards in Schema Name </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+ <div class=" testcase">
+  <span id="num">3.4.8</span>
+  <span id="name">Using Multiple WildCards in Table Name </span>
+  <span id="isAutomated">not Automated</span>
+ </div>
+</div>
