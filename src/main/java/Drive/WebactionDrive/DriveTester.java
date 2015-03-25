@@ -21,7 +21,7 @@ public class DriveTester {
 	public static void main(String[] args) throws Exception{
 		WADrive myDrive = new WADrive();
 		java.io.File f = new java.io.File("testout.txt");
-		myDrive.uploadFileToFolder( f,"MY First Upload", "text/html");
+		myDrive.uploadFile( f,"MY First Upload", "text/html");
 		
 		
 //		File googleDoc = WADrive.getFileFromName(mydrive, "Oracle_Logminer_3.1.1_TestPlan");

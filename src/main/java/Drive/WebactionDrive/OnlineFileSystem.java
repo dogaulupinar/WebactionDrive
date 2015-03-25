@@ -24,9 +24,9 @@ public interface OnlineFileSystem {
 		}
 	}
 	public void updateFile(String fileID, File File);
-	public void uploadFile(File file, String title, String mimeType, String folderID) throws IOException;
+	public void uploadFileToFolder(File file, String title, String mimeType, String folderID) throws IOException;
 	public boolean fileExists(String fileID ) throws OnlineFileSystemException, IOException;
-	public void getFile(String fileID);
+	public com.google.api.services.drive.model.File getFile(String fileID) throws IOException;
 	public String getObjectID(String title) throws OnlineFileSystemException, IOException;
 	
 }

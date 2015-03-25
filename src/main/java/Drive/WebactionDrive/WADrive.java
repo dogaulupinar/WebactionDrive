@@ -105,7 +105,10 @@ public class WADrive  implements OnlineFileSystem{
 
 	public void setFolderID(String folderID){
 		this.folderID = folderID;
-
+	}
+	
+	public String getFolderID(){
+		return this.folderID;
 	}
 
 	/**
@@ -132,14 +135,17 @@ public class WADrive  implements OnlineFileSystem{
 		}
 	}
 	
-	public void uploadFileToFolder(java.io.File file, String title, String mimeType) throws IOException{
+	public void uploadFile(java.io.File file, String title, String mimeType) throws IOException, GoogleDriveException{
 		if (folderID == null){
-			log.error("folderID is not set for this instance", new GoogleDriveException());
+			log.error("folderID is not set for this instance");
+			throw new GoogleDriveException();
 		}
-		uploadFile(file,title,mimeType,this.folderID);
+		log.info("Sending File to folder id: " + this.folderID);
+		uploadFileToFolder(file,title,mimeType,this.folderID);
 	}
 	
-	public void uploadFile(java.io.File file, String title, String mimeType, String folderID) throws IOException{
+	
+	public void uploadFileToFolder(java.io.File file, String title, String mimeType, String folderID) throws IOException{
 		
 		log.info("upload file");
 		File metaData = new File();
@@ -207,7 +213,7 @@ public class WADrive  implements OnlineFileSystem{
 	 * @throws Exception
 	 */
 	public File getFileFromName(String name) throws IOException, Exception{
-		return this.myDrive.files().get(getObjectID(name)).execute();
+		return getFile(getObjectID(name));
 	}
 
 
@@ -245,27 +251,7 @@ public class WADrive  implements OnlineFileSystem{
 
 	}
 	
-	public static HTMLCreate parseTableOfContentsToHTML(InputStream googleContent) throws IOException{
-		BufferedReader googleReader = new BufferedReader( new InputStreamReader(googleContent));
-		String line;
-		Matcher m;
-		HTMLCreate html = new HTMLCreate();
-		while ((line = googleReader.readLine()) !=null){
-			if ((m = Pattern.compile("(?i)([0-9])\\s+Test Cases.*").matcher(line)).find()){
-				String digit = m.group(1);
-				while ((line = googleReader.readLine()) !=null){
-					if ((m =Pattern.compile(String.format("(^%s\\.[0-9])\\s+(.*)",digit)).matcher(line)).find()){
-						html.addTestSuite(m.group(1), m.group(2));
-					}
-					if ((m =Pattern.compile(String.format("(^%s\\.[0-9]\\.[0-9])\\s+(.*)",digit)).matcher(line)).find()){
-						html.addTestCase(m.group(1), m.group(2), "not Automated");
 
-					}
-				}
-			}
-		}
-		return html;
-	}
 	
 	
 	
@@ -374,8 +360,8 @@ public class WADrive  implements OnlineFileSystem{
 
 
 
-	public void getFile(String fileID) {
-		// TODO Auto-generated method stub
+	public File getFile(String fileID) throws IOException {
+		return this.myDrive.files().get(fileID).execute();
 		
 	}
 
