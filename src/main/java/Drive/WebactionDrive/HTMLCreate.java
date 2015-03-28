@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -18,6 +19,14 @@ public class HTMLCreate extends Document {
 	
 	private static Tag tagDiv  = Tag.valueOf("div");
 	private static Tag tagSpan = Tag.valueOf("span");
+	final static Logger log = Logger.getLogger(WADrive.class);
+	
+	public enum AUTOMATIONSTATUS{
+		AUTOMATED,
+		NOTAUTOMATED
+	}
+
+	
 	private int childIndex = 0;
 	
 	public HTMLCreate(String testCase) throws IOException{
@@ -66,6 +75,12 @@ public class HTMLCreate extends Document {
 		div.appendChild(spanName);
 		div.appendChild(spanState);
 		this.child(childIndex).appendChild(div);
+		
+	}
+	
+	public int getNumberWithStatus(AUTOMATIONSTATUS status){
+		System.out.print(status);
+		return 0;
 		
 	}
 	

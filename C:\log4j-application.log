@@ -71,3 +71,15 @@ Drive.WebactionDrive.WADrive$GoogleDriveException
 2015-03-19 18:58:44 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
 2015-03-19 18:58:44 INFO  GoogleAuthorization:323 - Building new Drive Service
 2015-03-19 18:58:44 INFO  WADrive:144 - upload file
+2015-03-25 15:38:54 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-25 15:38:54 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-25 15:38:54 INFO  WADrive:143 - Sending File to folder id: 0B6PlMpwtqrfpd0lNZEYyU2p1RWs
+2015-03-25 15:38:54 INFO  WADrive:150 - upload file
+2015-03-25 15:38:58 INFO  WADrive:229 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-25 15:38:58 INFO  WADrive:187 - Downloading: Oracle_Logminer_3.1.1_TestPlan
+2015-03-25 15:40:02 INFO  GoogleAuthorization:262 - Creating credential from accessToken and refreshToken
+2015-03-25 15:40:02 INFO  GoogleAuthorization:323 - Building new Drive Service
+2015-03-25 15:40:02 INFO  WADrive:143 - Sending File to folder id: 0B6PlMpwtqrfpd0lNZEYyU2p1RWs
+2015-03-25 15:40:02 INFO  WADrive:150 - upload file
+2015-03-25 15:40:06 INFO  WADrive:229 - Requesting file Oracle_Logminer_3.1.1_TestPlan
+2015-03-25 15:40:06 INFO  WADrive:187 - Downloading: Oracle_Logminer_3.1.1_TestPlan
